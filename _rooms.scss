@@ -1,0 +1,337 @@
+// NAVBAR
+.rooms-page-navbar {
+    height: 70px;
+    padding: 0px 140px 0px 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    &-sections {
+        display: flex;
+        align-items: center;
+        &-links {
+            display: flex;
+            width: 446px;
+            justify-content: space-between;
+            align-items: center;
+            a {
+                @extend %links;
+            }
+            &-services,
+            &-agreements {
+                cursor: pointer;
+            }
+        }
+        &-sign-in-button {
+            border-width: 2px;
+            border-style: solid;
+            border-color: linear-gradient(#BC9CFF, #8BA4F9);
+            color: #BC9CFF;
+            padding: 10px 20px;
+            border-radius: 22px;
+            margin-left: 20px;
+            cursor: pointer;
+            @extend %button;
+        }
+        &-register-button {
+            background: linear-gradient(#BC9CFF, #8BA4F9);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 22px;
+            margin-left: 20px;
+            cursor: pointer;
+            @extend %button;
+        }
+    }
+}
+
+// CONTENT, PARAMETERS
+.rooms-page-content {
+    padding: 30px 140px 0px 140px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+    &-parameters {
+        &-arrival {
+            &-title {
+                @extend %header;
+                margin-bottom: 5px;
+            }
+            &-fill {
+                width: 266px;
+                height: 44px;
+                background-color: #fff;
+                border: 1px solid $fill-color;
+                border-radius: 4px;
+            }
+        }
+        &-guests {
+            margin-top: 20px;
+            &-title {
+                @extend %header;
+            }
+            &-fill {
+                width: 266px;
+                height: 44px;
+                background-color: #fff;
+                border: 1px solid $fill-color;
+                border-radius: 4px;
+            }
+        }
+        &-price {
+            margin: 30px 0px;
+            &-title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                margin-bottom: 23px;
+                &-range {
+                    @extend %header;
+                }
+                &-example {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: $links-color;
+                }
+            }
+            &-diagram {
+                width: 266px;
+                height: 6px;
+                border: 1px solid $fill-color;
+                border-radius: 3px;
+                background: #FFFFFF;
+                margin-bottom: 13.56px;
+            }
+            &-paragrapg {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: $links-color;
+            }
+        }
+        &-regulations {
+            margin-bottom: 30.88px;
+            &-title {
+                margin-bottom: 17px;
+                @extend %header;
+            }
+            &-list {
+                &-option {
+                    display: flex;
+                    margin-bottom: 14.61px;
+                    align-items: center;
+                    width: 192px;
+                    p {
+                        @extend %links;
+                    }
+                    img {
+                        margin-right: 9.76px;
+                    }
+                }
+            }
+        }
+        &-availability {
+            margin-bottom: 30px;
+            &-title {
+                @extend %header;
+                margin-bottom: 16px;
+            }
+            &-option {
+                display: flex;
+                margin-bottom: 10px;
+                &-select {
+                    margin-right: 10px;
+                }
+                &-review {
+                    h3 {
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: $add-text-color;
+                        margin-bottom: 5px;
+                    }
+                    p {
+                        @extend %links;
+                        width: 203px;
+                    }
+                }
+            }
+        }
+        &-facilities {
+            margin-bottom: 30px;
+            &-title {
+                @extend %header;
+                margin-bottom: 5px;
+            }
+            &-fill {
+                width: 266px;
+                height: 44px;
+                background-color: #fff;
+                border: 1px solid $fill-color;
+                border-radius: 4px;
+            }
+        }
+        &-add-facilities {
+            &-title {
+                @extend %header;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    &-rooms {
+        margin-left: 60px;
+        width: 1160px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        &-title {
+            @extend %large_header;
+            margin-bottom: 21px;
+        }
+        &-first {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 100%;
+            &-room {
+                width: 270px;
+                height: 257px;
+                box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+                border-radius: 4px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &-photo {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        border-radius: 4px 4px 0px 0px;
+                    }
+                    &-expand {
+                        position: absolute;
+                        width: 90%;
+                        display: flex;
+                        justify-content: space-between;
+                        top: 45%;
+                        .right {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+                &-info {
+                    width: 90%;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    display: flex;
+                    height: 40%;
+                    margin-top: 20px;
+                    &-num_price {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding-bottom: 10px;
+                        border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+                        &-num {
+                            @extend %header;
+                            font-size: 19px;
+                        }
+                        &-price {
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: rgba(31, 32, 65, 0.5);
+                            span {
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                    &-rate_review {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: 8px;
+                        &-review {
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: rgba(31, 32, 65, 0.5);
+                            span {
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-nav {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-page {
+                display: flex;
+                &-num-active {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 50px;
+                    height: 50px;
+                    background: linear-gradient(#BC9CFF, #8BA4F9);
+                    border-radius: 50%;
+                    font-weight: 700;
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 15px;
+                }
+                &-num {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: rgba(31, 32, 65, 0.5);
+                    line-height: 15px;
+                }
+                &-next {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background: linear-gradient(#6fcf97, #66d2ea);
+                }
+            }
+            &-offer {
+                margin-top: 10.56px;
+                color: rgba(31, 32, 65, 0.75);
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+.rooms-page,
+.room_page {
+    .main-page-footer {
+        margin-top: 70px;
+        border-top: 1px solid rgba(31, 32, 65, 0.25);
+    }
+}

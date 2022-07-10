@@ -1,0 +1,309 @@
+.room_page {
+    &-main_photo {
+        display: flex;
+        justify-content: center;
+        &-smaler {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &-info {
+        padding: 70px 130px 0px 130px;
+        display: flex;
+        justify-content: space-between;
+        &-comfort {
+            display: flex;
+            .intelligence {
+                display: flex;
+                flex-direction: column;
+                margin-right: 81px;
+                .class {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                h1 {
+                    font-weight: 700;
+                    font-size: 19px;
+                    line-height: 23px;
+                    color: #1F2041;
+                }
+                &_comfort,
+                &_convenience,
+                &_cosiness {
+                    img {
+                        margin-right: 10px;
+                    }
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+                    padding-bottom: 17px;
+                    margin-top: 23px;
+                    h2 {
+                        font-weight: 700;
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                        color: rgba(31, 32, 65, 0.75);
+                    }
+                    p {
+                        @extend %links;
+                    }
+                }
+            }
+            .impressions {
+                h1 {
+                    font-weight: 700;
+                    font-size: 19px;
+                    line-height: 23px;
+                    color: #1F2041;
+                    margin-bottom: 20px;
+                }
+                &_rate {
+                    display: flex;
+                    align-items: flex-end;
+                    &-diagram {
+                        margin-right: 30px;
+                    }
+                    &-characteristics {
+                        .one,
+                        .two,
+                        .three,
+                        .four {
+                            img {
+                                margin-right: 5px;
+                            }
+                            p {
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 24px;
+                                color: rgba(31, 32, 65, 0.75);
+                            }
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+        &-review {
+            &-title {
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                h1 {
+                    font-weight: 700;
+                    font-size: 19px;
+                    line-height: 23px;
+                    color: #1F2041;
+                }
+                h3 {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: rgba(31, 32, 65, 0.5);
+                    margin-left: 347px;
+                }
+            }
+            &-comment {
+                .person {
+                    display: flex;
+                    margin-top: 20px;
+                    img {
+                        margin-right: 9.93px;
+                    }
+                    h1 {
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: rgba(31, 32, 65, 0.75);
+                    }
+                    p {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: rgba(31, 32, 65, 0.75);
+                    }
+                }
+                .comment {
+                    display: flex;
+                    &_like {
+                        margin-right: 14.31px;
+                    }
+                    &_kk {
+                        width: 653px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: rgba(31, 32, 65, 0.75);
+                    }
+                }
+            }
+        }
+        &-rules {
+            margin-top: 30px;
+            display: flex;
+            h1 {
+                margin-bottom: 20px;
+                font-weight: 700;
+                font-size: 19px;
+                line-height: 23px;
+                color: #1F2041;
+            }
+            &-first {
+                margin-right: 70px;
+                .enumeration {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-right: 10.43px;
+                    }
+                    p {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: rgba(31, 32, 65, 0.75);
+                    }
+                }
+            }
+            &-second {
+                h1 {
+                    font-weight: 700;
+                    font-size: 19px;
+                    line-height: 23px;
+                    color: #1F2041;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: rgba(31, 32, 65, 0.75);
+                    width: 341px;
+                }
+            }
+        }
+        &-card {
+            background-color: #fff;
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+            padding: 40px 30px 30.44px 30px;
+            width: 320px;
+            height: 441.56px;
+            &-title {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                h1 {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 17px;
+                    color: #1F2041;
+                    span {
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 15px;
+                        color: #BC9CFF;
+                    }
+                }
+                p {
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: rgba(31, 32, 65, 0.5);
+                    span {
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                }
+            }
+            &-time {
+                margin-top: 20px;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                .arrival,
+                .departure {
+                    h1 {
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #1F2041;
+                        text-transform: uppercase;
+                    }
+                    .fill {
+                        width: 150px;
+                        height: 44px;
+                        border: 1px solid rgba(31, 32, 65, 0.25);
+                        border-radius: 4px;
+                        margin-top: 5.44px;
+                    }
+                }
+            }
+            &-guest {
+                margin-top: 20.56px;
+                h1 {
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #1F2041;
+                    text-transform: uppercase;
+                }
+                .fill {
+                    width: 320px;
+                    height: 44px;
+                    border: 1px solid rgba(31, 32, 65, 0.25);
+                    border-radius: 4px;
+                    margin-top: 5.44px;
+                }
+            }
+            &-calculate {
+                margin-top: 20.56px;
+                .price_for_night,
+                .price_for_services,
+                .price_for_add_services {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    p {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: rgba(31, 32, 65, 0.75);
+                        margin-top: 10px;
+                    }
+                }
+            }
+            &-total {
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                .line {
+                    width: 182px;
+                    height: 1px;
+                    border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+                }
+                h1 {
+                    font-weight: 700;
+                    font-size: 19px;
+                    line-height: 23px;
+                    color: #1F2041;
+                }
+            }
+            &-button {
+                margin-top: 20px;
+                width: 320px;
+                height: 44px;
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                border-radius: 22px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                color: #FFFFFF;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+        }
+    }
+}

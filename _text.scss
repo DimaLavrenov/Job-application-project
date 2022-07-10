@@ -1,0 +1,29 @@
+%large_header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: $header-color;
+}
+
+%header {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.63px;
+    text-transform: uppercase;
+    color: $header-color;
+}
+
+%links {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: $links-color;
+}
+
+%button {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
